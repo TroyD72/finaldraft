@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Troy Donner">
+    <meta name="description" content="This page contains all the things I am learning how to create as I learn HTML.">
+    <title>My First Web Page</title>
+    <link rel="icon" href="html5.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Superhero Database!</h1>
+
+       
+    </header>
+    <button class="test">123</button>
+    <h2>JavaScript Geolocation</h2>
+
+<p>Click the button to get your coordinates.</p>
+
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+
+<script>
+const x = document.getElementById("demo");
+
+function getLocation() {
+  try {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } catch {
+    x.innerHTML = err;
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+
+    <hr>
+    <main>
+        <article id="html">
+            <h2>Search bio's of any hero or villian. From any universe</h2>
+ 
+            
+            <section>
+                <h3>HTML5</h3>
+                <img src="img/html_logo_300x300.png" alt="HTML5 Logo" title="I am learning HTML5" width="300"
+                    height="300">
+            
+            </section>
+            <section>
+                
+                <p>Complete database for all things hero:</p>
+                <ol>
+                    <li>...Learn the history of your favorite heros.</li>
+                    <li>...Find out evrey movie they have appeared in.</li>
+                    <li>...You can download your own API at<abbr title="Marvel">
+                            <a href="https://developer.mozilla.org/">Marvel.com</a>
+                        </abbr>.</li>
+                </ol>
+                <aside>
+                    <details>
+                        <summary>Guess who <mark>Supermans</mark> alter ego is?</summary>
+                        <p>Clark Kent.A news reporter at the Daily planet..</p>
+                    </details>
+                </aside>
+            </section>
+        </article>
+
+        <hr>
+
+        <article id="vacation">
+            <h2>I Am Also Planning a Vacation</h2>
+            <p>I've been working hard and <em>really need a getaway</em>.</p>
+            <p>I live in <abbr title="Kansas">KS</abbr> so I want visit a beach.</p>
+
+            <section>
+                <h3>Offical hero websites</h3>
+                <ul>
+                    <li>
+                        <a href="https://marvelofficial.com/shop/">Marvel offical</a>
+                                                  Marvel montage
+                            </figcaption>
+      <figure>
+                            <img src="x.jpg" alt="Marvel heros"
+                                title="The good guys" width="800" height="800" loading="lazy">
+                            <figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <a href="https://www.dc.com/characters"> DC offical</a>
+                        <figure>
+                            <img src="y.jpg" alt="DC heros" title="The other good guys!"
+                                width="800" height="800" loading="lazy">
+                            <figcaption>
+                                DC montage
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </section>
+            <!-- TODO: Add more places -->
+            <section>
+                <h3>Super Villians from both universe!</h3>
+                <dl>
+                    <dt>Lex Luther</dt>
+                    <dd>He is one bad man~ <strong>Evil</strong>!</dd>
+
+                    <dt>Magneto</dt>
+                    <dd>Very Magnetic.</dd>
+
+                    <dt>The Joker</dt>
+                    <dd>Nothing funny Here.</dd>
+                </dl>
+            </section>
+        </article>
+    </main> <figure>
+        <img src="z.jpg" alt="Marvel heros"
+            title="Evil Mofos" width="800" height="800" loading="lazy">
+        <figcaption>
+    </figure>
+
+    <hr>
+    <footer>
+        <p>
+            &lt;&lt;&lt; &copy; <a href="about.html">Troy Donner</a> &gt;&gt;&gt;
+        </p>
+        <p>
+            <a href="#">Back to Top</a>
+        </p>
+    </footer>
+</body>
+
+    <body>
+        <h1>Superhero Database</h1>
+        <div>
+            <p> select from list below</p>
+            <select>
+                <options> Test Option</options>
+            </select>
+            <input type="button" value=":search">
+        </div>
+            <div>
+                <img src="" alt="">
+            </div>
+
+        </body>
+        
+     
+</html>
+<script src="intro.js"></script>
